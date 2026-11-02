@@ -35,4 +35,4 @@
 
     - name: Print the command output
       debug:
-        msg: "{{ command_output.stdout_lines }}"    
+        msg: "{{ command_output.stdout_lines }}"
