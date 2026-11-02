@@ -17,3 +17,11 @@
       debug:
         msg: "{{ item.0 }} match {{ item.1 }}"
       loop: "{{ var3 | zip(var4) | list }}"
+
+    - name: Execute a shell command
+      shell: "./final.sh"
+      register: command_output
+
+    - name: Print the command output
+      debug:
+        msg: "{{ command_output.stdout_lines }}"    
