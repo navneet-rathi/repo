@@ -15,5 +15,5 @@
 
     - name: print a message
       debug:
-        msg: "{{ item }}"
-      loop: "{{var3 }}"      
+        msg: "{{ item.0 }} match {{ item.1 }}"
+      loop: "{{ var3 | zip(var4) | list }}"
