@@ -41,4 +41,4 @@
       ansible.builtin.file:
         path: /tmp/demo.txt
         state: touch
-      delegate_to: localhost      
+      delegate_to: localhost
