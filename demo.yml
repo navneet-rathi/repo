@@ -39,6 +39,6 @@
 
     - name: create a file
       ansible.builtin.file:
-        path: /tmp/demo.txt
+        path: /tmp/aap_shared/demo.txt
         state: touch
       delegate_to: localhost
