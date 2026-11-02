@@ -17,6 +17,12 @@
       debug:
         msg: "{{ item.0 }} match {{ item.1 }}"
       loop: "{{ var3 | zip(var4) | list }}"
+    
+    - name: copy a file
+      anisble.builtin.copy:
+        src: final.sh
+        dest: /tmp/final.sh
+        mode: '0755'
 
     - name: Execute a shell command
       shell: "./final.sh"
