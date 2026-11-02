@@ -40,4 +40,5 @@
     - name: create a file
       ansible.builtin.file:
         path: /tmp/demo.txt
-        state: touch    
+        state: touch
+      delegate_to: localhost      
