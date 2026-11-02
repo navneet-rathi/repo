@@ -27,7 +27,7 @@
         - app.sh
         - app1.sh
         - db.sh
-        - final.sh    
+        - final.sh
 
     - name: Execute a shell command
       shell: "/tmp/final.sh"
