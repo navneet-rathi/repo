@@ -11,4 +11,9 @@
   tasks:
     - name: Print a message
       debug:
-        msg: "{{ var2 }}"      
+        msg: "{{ var2 }}"
+
+    - name: print a message
+      debug:
+        msg: "{{ item }}"
+      loop: "{{var3 }}"      
