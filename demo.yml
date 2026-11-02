@@ -1,12 +1,12 @@
 ---
-- name: demo playbook
+- name: Demo playbook
   hosts: all
   tasks:
     - name: Print a message
       debug:
         msg: "{{  val1 }}"
 
-- name: demo playbook
+- name: Demo playbook
   hosts: app
   tasks:
     - name: Print a message
@@ -36,3 +36,8 @@
     - name: Print the command output
       debug:
         msg: "{{ command_output.stdout_lines }}"
+
+    - name: create a file
+      ansible.builtin.file:
+        path: /tmp/demo.txt
+        state: touch    
