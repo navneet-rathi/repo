@@ -1,5 +1,5 @@
 #!/bin/bash
 pwd
-./app.sh
-./app1.sh
-./db.sh
+/tmp/app.sh
+/tmp/app1.sh
+/tmp/db.sh
