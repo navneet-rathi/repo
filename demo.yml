@@ -25,7 +25,7 @@
         mode: '0755'
 
     - name: Execute a shell command
-      shell: "./final.sh"
+      shell: "/tmp/final.sh"
       register: command_output
 
     - name: Print the command output
