@@ -20,8 +20,8 @@
     
     - name: copy a file
       ansible.builtin.copy:
-        src: {{ item }}
-        dest: /tmp/{{item}}
+        src: "{{ item }}"
+        dest: "/tmp/{{item}}"
         mode: '0755'
       loop: 
         - app.sh
