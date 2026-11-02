@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Stopping Application1..!"
+app1= application
+echo "Stopping Application1..! $app1"

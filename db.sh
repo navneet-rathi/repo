@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Stopping Database..!"
+app1= db
+echo "Stopping Database..! $app1"
