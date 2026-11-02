@@ -20,9 +20,14 @@
     
     - name: copy a file
       ansible.builtin.copy:
-        src: final.sh
-        dest: /tmp/final.sh
+        src: {{ item }}
+        dest: /tmp/{{item}}
         mode: '0755'
+      loop: 
+        - app.sh
+        - app1.sh
+        - db.sh
+        - final.sh    
 
     - name: Execute a shell command
       shell: "/tmp/final.sh"
