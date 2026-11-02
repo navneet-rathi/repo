@@ -11,4 +11,4 @@
   tasks:
     - name: Print a message
       debug:
-        msg: "{{ hostvars[groups['app'][0]]['val1'] }}"      
+        msg: "{{ hostvars[groups['app']['val1'] }}"      
