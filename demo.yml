@@ -19,7 +19,7 @@
       loop: "{{ var3 | zip(var4) | list }}"
     
     - name: copy a file
-      anisble.builtin.copy:
+      ansible.builtin.copy:
         src: final.sh
         dest: /tmp/final.sh
         mode: '0755'
