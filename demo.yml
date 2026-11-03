@@ -17,7 +17,7 @@
       debug:
         msg: "{{ item.0 }} match {{ item.1 }}"
       loop: "{{ var3 | zip(var4) | list }}"
-    
+
     - name: copy a file
       ansible.builtin.copy:
         src: "{{ item }}"
