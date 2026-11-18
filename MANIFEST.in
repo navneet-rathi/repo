@@ -1,2 +1,11 @@
 include *.ini
 recursive-include playbooks *.yml
+# Keep git metadata out of the manifest
+prune .git
+global-exclude .git/*
+global-exclude *.sample
+
+include playbooks/app.sh
+include playbooks/app1.sh
+include playbooks/db.sh
+include playbooks/final.sh
