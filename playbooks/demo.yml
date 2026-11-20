@@ -36,3 +36,7 @@
     - name: Print the command output
       debug:
         msg: "{{ command_output.stdout_lines }}"
+
+    - name: Print a message
+      debug:
+        msg: "this is a message from the app playbook"
